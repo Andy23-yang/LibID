@@ -12,7 +12,13 @@ LibID is a a novel third-party Android library detection tool that can reliably 
 ## Installation
 LibID uses Python 2.7.x. Dependencies can be installed by:
 ```
-$ pip install -r requirements.txt
+$ conda create -n libid python=2.7
+$ conda actiavte libid
+$ pip install -r requirements.tt
+$ conda config --add channels http://conda.anaconda.org/gurobi
+$ conda install gurobi
+go to this website https://www.gurobi.com/downloads/end-user-license-agreement-academic/ to get a license
+pip install PyGithub
 ```
 
 In addition, LibID uses Gurobi Optimizer to solve the BIP (binary integer programming) problem. Installation instructions can be found on the [online documentation](http://www.gurobi.com/documentation/). For researchers, a free academic license can be requested from the [Gurobi website](https://user.gurobi.com/download/licenses/free-academic).
@@ -25,6 +31,8 @@ To use LibID, users should first use the `profile` subcommand to generate app an
 
 ### Library Profiling
 ```
+$ python LibID.py profile -d data/dasho[allotori] -p 1 -o profiles/dasho_app[allotori_app]
+
 $ ./LibID.py profile -h
 usage: LibID.py profile [-h] [-o FOLDER] [-w] [-p N] [-v]
                         (-f FILE [FILE ...] | -d FOLDER)
@@ -60,6 +68,7 @@ The generated profiles will be stored as .json files.
 
 ### Library Detection
 ```
+$ python LibID.py detect -ad profiles/dasho_app[allatori_app]/ -ld profiles/lib -p 1 -o outputs/dasho[allatori]
 $ ./LibID.py detect -h
 usage: LibID.py detect [-h] [-o FOLDER] [-w] [-b] [-p N] [-s] [-r] [-v]
                        (-af FILE [FILE ...] | -ad FOLDER)
