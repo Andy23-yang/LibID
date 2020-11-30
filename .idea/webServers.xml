@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="940e5d7e-6e30-4bc6-9fb4-15fa2c4c57b6" name="FAREAST.v-xiaody@GCRAZGDL725.redmond.corp.microsoft.com:22" url="http:///">
+        <fileTransfer rootFolder="/home/v-xiaody/teamdrive/sciteamdrive2/v-xiaody" accessType="SFTP" host="GCRAZGDL725.redmond.corp.microsoft.com" port="22" sshConfigId="5f7ec6f4-8aa3-40ec-b1e1-109b63cf1e2a" sshConfig="FAREAST.v-xiaody@GCRAZGDL725.redmond.corp.microsoft.com:22 agent" authAgent="true" />
+      </webServer>
+    </option>
+  </component>
+</project>

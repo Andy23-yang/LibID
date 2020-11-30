@@ -15,3 +15,5 @@
 /module/*.txt
 
 !/example/init.sh
+proguard_config/get_statistics - 副本.py
+evaluate - 副本.py
